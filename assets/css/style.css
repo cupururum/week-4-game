@@ -9,7 +9,14 @@ body {
 
 .jumbotron {
   background-color: #f8e2cd;
+  padding-bottom: 24px;
+}
 
+#beginGame {
+  height: 50px;
+  width: 150px;
+  font-size: 18px;
+  color: inherit;
 }
 
 p, h1 {
