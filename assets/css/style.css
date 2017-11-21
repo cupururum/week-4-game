@@ -83,3 +83,13 @@ footer.footer {
 #footerP {
   padding: 10px;
 }
+
+@media (max-width: 640px) {
+  button {
+    height: 100px;
+  }
+
+  img {
+    width: 40%;
+  }
+}
