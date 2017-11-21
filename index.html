@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title> </title>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous">
+      <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    </head>
+    <body>
+
+      <!-- fix jumbotron from the top -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12" id="fixJumbotron">
+          </div>
+        </div>
+      </div>
+        <!-- jumbotron -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-1">
+          </div>
+          <div class="col-md-10">
+            <div class="jumbotron">
+              <h1 class="display-3">Crystals Collector!</h1>
+              <p>You will be given a random number at the start of the game.</p>
+              <p>
+                There are four crystals below. By clicking on a crystal you
+                will add a specific amount of points to your total score.
+              </p>
+              <p>
+                You win the game by matching your total score to random
+                number, you lose the game if your total score goes above
+                the random number.
+              </p>
+              <p>
+                The value of each crystal is hidden from you until you
+                click on it.
+              <p>
+                Each time when the game starts, the game will change the
+                values of each crystal.
+              </p>
+            </div>
+        </div>
+        <div class="col-md-1">
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-1">
+        </div>
+        <div class="col-xs-5" id="winsDiv">
+          <div class="card border-success">
+            <div class="card-body">
+              <blockquote class="card-blockquote" id="winsBloclquote">
+                <p id="winsP"> Wins: 0 </p>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-5" id="lossesDiv">
+          <div class="card border-danger">
+              <div class="card-body">
+                <blockquote class="card-blockquote" id="lossesBloclquote">
+                  <p id="lossesP"> Losses : 0 </p>
+                </blockquote>
+              </div>
+            </div>
+        </div>
+        <div class="col-md-1">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-1">
+        </div>
+        <div class="col-sm-6 col-md-5">
+          <div class="card text-white bg-primary">
+              <div class="card-body">
+                <blockquote class="card-blockquote numbers">
+                  <p id="randomNumberDisplay">Random Number</p>
+                  <footer>Random Number You Need to Guess </footer>
+                </blockquote>
+              </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-5">
+          <div class="card text-white bg-primary">
+              <div class="card-body">
+                <blockquote class="card-blockquote numbers">
+                  <p id="guessNumberDisplay">Your Number</p>
+                  <footer>Collect your Guess </footer>
+                </blockquote>
+              </div>
+            </div>
+        </div>
+          <div class="col-md-1">
+          </div>
+      </div>
+    </div>
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-1">
+        </div>
+        <div class="col-md-10">
+          <div class="row">
+            <div class="col-xs-6">
+              <button id="firstCrystall"> <img src=assets/images/firstCrystal.png></button>
+            </div>
+            <div class="col-xs-6">
+              <button id="secondCrystall"><img src=assets/images/secondCrystal.png></button>
+            </div>
+          </div>
+          <div class="row"> <div class="col-xs-12" id="separateSmallButtons"></div></div>
+          <div class="row">
+            <div class="col-xs-6">
+              <button id="thirdCrystall"> <img src=assets/images/thirdCrystal.png></button>
+            </div>
+            <div class="col-xs-6">
+              <button id="forthCrystall"> <img src=assets/images/forthCrystal.png></button>
+           </div>
+          </div>
+        </div>
+        <div class="col-md-1">
+        </div>
+      </div><!-- closing row for crystalls -->
+    </div> <!-- closing container for crystalls -->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12" id="fixFooter"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-1">
+        </div>
+        <div class="col-md-10" >
+          <footer class="footer"> <p id="footerP">Valeriya Romashchenko </p> </footer>
+        </div>
+        <div class="col-md-1">
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+            <script src="assets/javascript/game.js"></script>
+          </body>
+        </html>
